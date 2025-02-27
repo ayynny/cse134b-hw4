@@ -23,10 +23,26 @@
 
     <h1>Contact Me</h1>
 
-    <div class="contact-container">
-        <p>Contact me at: <a href="mailto:anzh.06.03@gmail.com">anzh.06.03@gmail.com</a></p>
-        
-    </div>
+
+    <form class="contact-container" method = "post" target="httpbin.org">
+        <label for="fname">First name:</label><br>
+        <input type="text" id ="fname" name ="fname" required><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id ="lname" name ="lname" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id ="email" name ="email" required><br>
+
+        <label for="comments">Comments:</label><br>
+        <input type="text" id ="comments" name ="comments"><br>
+
+        <label for="possible_bot" ></label><br>
+        <input type="hidden" id ="possible_bot" name="possible_bot" value=true>
+
+        <input type="submit" value="Submit">
+
+    </form>
 
 </body>
 <footer class="contact-container">
