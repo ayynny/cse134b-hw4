@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/css/nav-container.css">
     <link rel="stylesheet" href="/css/aboutme.css">
+    <link rel="stylesheet" href="/css/theme-switcher.css">
 
 
 </head>
@@ -19,12 +20,17 @@
             <a href="academics.html">Academics</a>
             <a href="work.html">Work</a>
             <a href="contact.html">Contact Me</a>
+            <button id="theme-toggle-btn" aria-label="Toggle Theme"></button>
+
         </nav>
         <h1>About Me</h1>
     </header>
-    
+    <noscript>
+        <div style="color: red; text-align: center; padding: 10px;">
+          Note: Theme switching functionality requires JavaScript.
+        </div>
+      </noscript>
     <div class="container">
-        <!-- Text Section -->
         <section class="grid-body">
             <p>I was born in Los Angeles, CA in 2003, raised in Alameda, CA for 18 years, and currently living in La Jolla, CA as of 2023.</p>
             <p>I have an older brother and older sister, and my lovely and cute Yorkie Rambo!</p>
@@ -40,11 +46,11 @@
             </figure>
         </section>
     
-        <!-- Image Section -->
         <picture>
             <img class="picture" src="media/meandrambo.jpg" type="image/jpeg" alt="Picture of me and my dog Rambo!">
         </picture>
     </div>
-    
+    <script src="/js/theme-switcher.js" defer></script>
+
 </body>
 </html>

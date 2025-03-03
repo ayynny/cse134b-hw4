@@ -1,26 +1,23 @@
-/* Fix for body layout */
 .flex-body {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: center;
     text-align: left;
-    gap: 100px; /* Space between image and text */
+    gap: 100px;
     max-width: 80vw;
     margin: 0 auto;
     padding: 100px;
 }
 
-/* Image adjustments */
 .picture {
     width: 100%;
     max-width: 400px;
     height: auto;
     border-radius: 50px;
-    flex-shrink: 0; /* Prevents shrinking */
+    flex-shrink: 0; 
 }
 
-/* Text container */
 .text-container {
     flex: 1;
     max-width: 50%;
@@ -28,18 +25,17 @@
 }
 
 .name {
-    font-size: 4vw; /* Scales dynamically with screen size */
+    font-size: 4vw;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 .subtext {
-    font-size: 2vw; /* Slightly smaller than name */
+    font-size: 2vw; 
     font-weight: normal;
     line-height: 1.5;
 }
 
-/* Responsive design */
 @media (max-width: 900px) {
     .flex-body {
         flex-direction: column;
@@ -57,7 +53,6 @@
     }
 }
 
-/* Footer adjustments */
 @media (max-width: 600px) {
     .flex-footer {
         flex-direction: column;
@@ -71,14 +66,12 @@
     align-items: center; 
     text-align: center;
     gap: 8px; 
-    
-    position: fixed; /* Keeps footer at the bottom */
+    position: fixed; 
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     padding: 10px;
-    background-color: white; /* Ensures visibility */
 }
 
 @keyframes heartPulse {

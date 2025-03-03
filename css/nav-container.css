@@ -5,8 +5,9 @@
     overflow-x: auto;
     padding: 10px;
     font-family: Garamond, serif;
-    color: #7886C7;
+    color: inherit;
     justify-content: flex-end;
+    background-color: #FFF2F2;
 }
 
 h1{

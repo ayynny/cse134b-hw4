@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/nav-container.css">
     <link rel="stylesheet" href="/css/academics.css">
-
-
+    <link rel="stylesheet" href="/css/theme-switcher.css">
 </head>
 
 <body>
     <header>
+
         <nav class="nav-container">
             <a href = "home.html">Home</a>
             <a href="about-me.html">About Me</a>
             <a href="academics.html">Academics</a>
             <a href="work.html">Work</a>
             <a href="contact.html" >Contact Me</a>
+            <button id="theme-toggle-btn" aria-label="Toggle Theme"></button>
+
         </nav>
         <h1>My Academic Journey</h1>
     </header>
+    <noscript>
+        <div style="color: red; text-align: center; padding: 10px;">
+          Note: Theme switching functionality requires JavaScript.
+        </div>
+      </noscript>
 
     <main class = "container">
         <section class = "schools">
@@ -50,6 +57,8 @@
             <p>Co-founder of Chinese Culture Club. Manager for Badminton team. Board for Esports Club.</p>
         </section>
     </main>
+
+    <script src="/js/theme-switcher.js" defer></script>
 
 </body>
 </html>
